@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-md-3 bg-light">
+        <h2 class="text-center my-3">Registro Empleados</h2>
+        <form action="" method="POST" class="">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" class="form-control" id="first_name">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" class="form-control" id="last_name">
+            </div>
+            <div class="form-group">
+                <label for="tipo_documento">Tipo de Documento:</label>
+                <select name="tipo_documento" class="form-control" required id="document_type">
+                    <option value="">Documento</option>
+                    <option value="Cedula Ciudadania">Cedula Ciudadania</option>
+                    <option value="Ceduala Extranjeria">Cedula Extranjeria</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="documento">Documento:</label>
+                <input type="text" name="docuemento" class="form-control" required id="document">
+            </div>
+            <div class="form-group">
+                <label for="horario">Horario:</label>
+                <input type="time" name="horario" class="form-control" required id="hour">
+            </div>
+            <div id="put_employee">
+                <button class="btn btn-block btn-primary" type="button" onclick="post_emp()">Registrar</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-9">
+        <h2 class="text-center my-3">Lista Empledos</h2>
+        <table class="table table-hover text-center">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Tipo de Documeto</th>
+                    <th>Documento</th>
+                    <th>Horario</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="list_employee">
+                
+            </tbody>
+        </table>
+    </div>
+</div>
